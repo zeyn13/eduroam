@@ -1,7 +1,9 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
-
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
 body {
   padding-top: 7.5rem;
   padding-bottom: 3rem;

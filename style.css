@@ -1,0 +1,28 @@
+* {
+  font-family: inherit;
+}
+
+.opsioni-1 {
+  margin-bottom: 1rem;
+}
+
+.android-ios {
+  margin-left: 2rem;
+  font-size: 18px;
+}
+
+.verejtje {
+  margin: 1rem 0;
+  font-size: 18px;
+}
+
+.opsioni-2{
+  font-size: 18px;
+  margin-left: 1.5rem;
+}
+
+.wifi-text{
+margin-left: 5px;
+font-size: 18px;
+margin-bottom: 5rem;
+}
