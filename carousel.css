@@ -5,10 +5,12 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 body {
-  padding-top: 7.5rem;
+  padding-top: 4rem;
   padding-bottom: 3rem;
   color: rgb(var(--bs-tertiary-color-rgb));
 }
+
+
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
