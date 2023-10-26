@@ -112,3 +112,10 @@ body {
     margin-top: 7rem;
   }
 }
+
+
+@media(max-width:768px){
+  .kren-logo{
+    width: 20%;
+  }
+}
