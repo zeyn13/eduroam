@@ -26,3 +26,9 @@ margin-left: 5px;
 font-size: 18px;
 margin-bottom: 5rem;
 }
+
+@media(max-width:768px){
+  .kren-logo{
+    width: 20%;
+  }
+}
