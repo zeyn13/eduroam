@@ -1,34 +1,75 @@
 * {
-  font-family: inherit;
+ font-family: inherit;
 }
 
 .opsioni-1 {
-  margin-bottom: 1rem;
+ margin-bottom: 1rem;
 }
 
 .android-ios {
-  margin-left: 2rem;
-  font-size: 18px;
+ margin-left: 2rem;
+ font-size: 18px;
 }
 
 .verejtje {
-  margin: 1rem 0;
-  font-size: 18px;
+ margin: 1rem 0;
+ font-size: 18px;
 }
 
-.opsioni-2{
-  font-size: 18px;
-  margin-left: 1.5rem;
+.opsioni-2 {
+ font-size: 18px;
+ margin-left: 1.5rem;
 }
 
-.wifi-text{
-margin-left: 5px;
-font-size: 18px;
-margin-bottom: 5rem;
+.wifi-text {
+ margin-left: 5px;
+ font-size: 18px;
+ margin-bottom: 5rem;
 }
 
-@media(max-width:768px){
-  .kren-logo{
-    width: 20%;
-  }
+.for-providers-title {
+ padding: 25px 0;
+}
+
+.for-providers-last-p {
+ padding-bottom: 25px;
+}
+
+.for-providers-hr {
+ padding-bottom: 25px;
+}
+
+.for-providers-link {
+ text-decoration: none;
+}
+
+.eduroam-apps-link-hover {
+ color: black;
+}
+
+.eduroam-apps-link-hover:hover {
+ color: rgb(119, 119, 255);
+}
+
+.eduroam-companion {
+ padding-left: 25px;
+}
+
+.documents-wrapper {
+ margin-top: 80px;
+}
+
+.kren-contacts {
+ margin-top: 6rem;
+ margin-left: 5rem;
+}
+
+.document-list {
+ margin-left: 3rem;
+}
+
+@media (max-width: 768px) {
+ .kren-logo {
+  width: 20%;
+ }
 }

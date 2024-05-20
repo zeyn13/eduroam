@@ -1,209 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+   rel="stylesheet"
+   href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <link
+   href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+   rel="stylesheet"
+   integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+   crossorigin="anonymous" />
 
-    <title>Users</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header data-bs-theme="dark">
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <div class="container-fluid">
-          <!-- <a class="navbar-brand" href="#"></a -->
-          <img
-            src="img/kren-logo.jpg"
-            class="rounded-circle m-2 kren-logo"
-            width="10%"
-            alt=""
-          />
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarCollapse"
-            aria-controls="navbarCollapse"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+  <title>Users</title>
+  <link rel="stylesheet" href="style.css" />
+ </head>
+ <body>
+  <header data-bs-theme="dark">
+   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+     <img
+      src="img/kren-logo.jpg"
+      class="rounded-circle m-2 kren-logo"
+      width="10%"
+      alt="" />
+     <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarCollapse"
+      aria-controls="navbarCollapse"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse navbar-desktop" id="navbarCollapse">
+      <ul class="navbar-nav m-auto mb-2 mb-md-0">
+       <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="index.html">eduroam</a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="users.html">users</a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="for-providers.html">for providers</a>
+       </li>
+       <li class="nav-item dropdown">
+        <a
+         class="nav-link dropdown-toggle"
+         href="#"
+         role="button"
+         data-bs-toggle="dropdown"
+         aria-expanded="false">
+         how to
+        </a>
+        <ul class="dropdown-menu">
+         <li>
+          <a class="dropdown-item" href="eduroam-apps.html">eduroam Apps</a>
+         </li>
+         <li><hr class="dropdown-divider" /></li>
+         <li>
+          <a class="dropdown-item" href="compatible-devices.html"
+           >Compatible devices</a
           >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse navbar-desktop"
-            id="navbarCollapse"
-          >
-            <ul class="navbar-nav m-auto mb-2 mb-md-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
-                  >eduroam</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="users.html">users</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="for-providers.html">for providers</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  how to
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="eduroam-apps.html"
-                      >eduroam Apps</a
-                    >
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="compatible-devices.html"
-                      >Compatible devices</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="document.html">documents</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">contact</a>
-              </li>
-            </ul>
-
-            <!-- <form class="d-flex" role="search">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-                <button class="btn btn-outline-success" type="submit">
-                  Search
-                </button>
-              </form> -->
-          </div>
-        </div>
-      </nav>
-    </header>
-    <br /><br /><br /><br /><br />
-    <div class="container">
-      <div class="row">
-        <h3 class="mt-5">Opsioni 1-Udhëzim për instalim në telefon</h3>
-        <ul>
-          <p class="opsioni-1 mt-2">
-            <b> Shkarkoni aplikacionin për pajisjen tuaj: </b>
-          </p>
-          <li class="android-ios">
-            Për android:
-            <i class="bi bi-android"></i>
-            <b>
-              <a
-                href="https://play.google.com/store/search?q=geteduraom&c=apps&hl=en&gl=US"
-                class="text-success"
-                >GooglePlay – geteduroam;</a
-              ></b
-            >
-          </li>
-          <li class="android-ios">
-            Për iphone:
-            <i class="bi bi-phone-fill"></i>
-            <b
-              ><a
-                href="https://apps.apple.com/us/app/geteduroam/id1504076137"
-                class="text-success"
-                >Apple Store – geteduroam;</a
-              ></b
-            >
-          </li>
-
-          <ul>
-            <p class="verejtje"><b>Vërejtje:</b></p>
-            <li class="android-ios">
-              Duhet të regjistroheni vetëm një herë. Pastaj, lidhja me eduroam
-              është automatike përmes aplikacionit geteduroam;
-            </li>
-            <li class="android-ios">
-              Për regjistrim në eduroam, kredencialet duhet t’i shkruani vetëm
-              përmes aplikacionit;
-            </li>
-            <li class="android-ios mb-5">
-              Keni kujdes, domain-i në username përfundon me .ks, e jo .net;
-            </li>
-          </ul>
+         </li>
         </ul>
-
-        <h3 class="mb-3">Opsioni 2-Udhëzim për instalim në kompjuter</h3>
-        <ol>
-          <li class="opsioni-2 mb-2">
-            <b
-              >Hapeni linkun:
-              <a href="https://cat.eduroam.org/" class="text-success"
-                >eduroam Configuration Assistant Tool</a
-              ></b
-            >
-          </li>
-          <li class="opsioni-2">
-            Klikoni në butonin
-            <b>“Click here to download your eduroam installer”.</b>
-          </li>
-          <img src="img/instalim-img1.png" class="img mt-5" />
-
-          <b
-            ><li class="mt-4 opsioni-2">
-              Zgjidhni nga lista institucionin tuaj, ose përdorni “search”.
-            </li></b
-          >
-          <img src="img/instalim-img2.jpg" class="img mt-5" alt="" />
-
-          <b>
-            <li class="mt-4 opsioni-2">
-              Shkarkoni aplikacionin duke klikuar në buton “eduroam”
-            </li></b
-          >
-          <img src="img/instalim-img3.jpg" class="img mt-5" alt="" />
-          <b
-            ><li class="mt-4 opsioni-2">
-              Pas instalimit në kompjuter nuk do të gjeni aplikacionin e
-              veçantë.
-            </li></b
-          >
-        </ol>
-        <p class="wifi-text">
-          Vazhdoni me procedurat standarde të lidhjes me
-          <i class="bi bi-wifi"></i> wi-fi
-          <u>në kompjuter, gjeni wi-fi “eduroam”</u>
-          dhe shënoni kredencialet tuaja si për çdo wi-fi tjetër. Keni kujdes,
-          domain-i përfundon me “.ks”
-        </p>
-      </div>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="document.html">documents</a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="contact.html">contact</a>
+       </li>
+      </ul>
+     </div>
     </div>
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+   </nav>
+  </header>
+
+  <br /><br /><br /><br /><br />
+
+  <div class="container">
+   <div class="row">
+    <h3 class="mt-5">Opsioni 1-Udhëzim për instalim në telefon</h3>
+    <ul>
+     <p class="opsioni-1 mt-2">
+      <b> Shkarkoni aplikacionin për pajisjen tuaj: </b>
+     </p>
+     <li class="android-ios">
+      Për android: <i class="bi bi-android"></i>
+      <b>
+       <a
+        href="https://play.google.com/store/search?q=geteduraom&c=apps&hl=en&gl=US"
+        class="text-success"
+        >GooglePlay – geteduroam;</a
+       >
+      </b>
+     </li>
+     <li class="android-ios">
+      Për iphone:
+      <i class="bi bi-phone-fill"></i>
+      <b
+       ><a
+        href="https://apps.apple.com/us/app/geteduroam/id1504076137"
+        class="text-success"
+        >Apple Store – geteduroam;</a
+       ></b
+      >
+     </li>
+     <ul>
+      <p class="verejtje"><b>Vërejtje:</b></p>
+      <li class="android-ios">
+       Duhet të regjistroheni vetëm një herë. Pastaj, lidhja me eduroam është
+       automatike përmes aplikacionit geteduroam;
+      </li>
+      <li class="android-ios">
+       Për regjistrim në eduroam, kredencialet duhet t’i shkruani vetëm përmes
+       aplikacionit;
+      </li>
+      <li class="android-ios mb-5">
+       Keni kujdes, domain-i në username përfundon me .ks, e jo .net;
+      </li>
+     </ul>
+    </ul>
+
+    <h3 class="mb-3">Opsioni 2-Udhëzim për instalim në kompjuter</h3>
+    <ol>
+     <li class="opsioni-2 mb-2">
+      <b
+       >Hapeni linkun:
+       <a href="https://cat.eduroam.org/" class="text-success"
+        >eduroam Configuration Assistant Tool</a
+       ></b
+      >
+     </li>
+     <li class="opsioni-2">
+      Klikoni në butonin
+      <b>“Click here to download your eduroam installer”.</b>
+     </li>
+     <img src="img/instalim-img1.png" class="img mt-5" />
+
+     <b
+      ><li class="mt-4 opsioni-2">
+       Zgjidhni nga lista institucionin tuaj, ose përdorni “search”.
+      </li></b
+     >
+     <img src="img/instalim-img2.jpg" class="img mt-5" alt="" />
+
+     <b>
+      <li class="mt-4 opsioni-2">
+       Shkarkoni aplikacionin duke klikuar në buton “eduroam”
+      </li></b
+     >
+     <img src="img/instalim-img3.jpg" class="img mt-5" alt="" />
+     <b
+      ><li class="mt-4 opsioni-2">
+       Pas instalimit në kompjuter nuk do të gjeni aplikacionin e veçantë.
+      </li></b
+     >
+    </ol>
+    <p class="wifi-text">
+     Vazhdoni me procedurat standarde të lidhjes me
+     <i class="bi bi-wifi"></i> wi-fi
+     <u>në kompjuter, gjeni wi-fi “eduroam”</u>
+     dhe shënoni kredencialet tuaja si për çdo wi-fi tjetër. Keni kujdes,
+     domain-i përfundon me “.ks”
+    </p>
+   </div>
+  </div>
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script
+   src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+   integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+   crossorigin="anonymous"></script>
+  <script
+   src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+   integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+   crossorigin="anonymous"></script>
+ </body>
 </html>

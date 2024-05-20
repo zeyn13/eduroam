@@ -1,1 +1,370 @@
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, vel?</p>
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+   rel="stylesheet"
+   href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <link
+   href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+   rel="stylesheet"
+   integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+   crossorigin="anonymous" />
+
+  <title>Users</title>
+  <link rel="stylesheet" href="style.css" />
+ </head>
+ <body>
+  <header data-bs-theme="dark">
+   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+     <img
+      src="img/kren-logo.jpg"
+      class="rounded-circle m-2 kren-logo"
+      width="10%"
+      alt="" />
+     <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarCollapse"
+      aria-controls="navbarCollapse"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse navbar-desktop" id="navbarCollapse">
+      <ul class="navbar-nav m-auto mb-2 mb-md-0">
+       <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="index.html">eduroam</a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="users.html">users</a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="for-providers.html">for providers</a>
+       </li>
+       <li class="nav-item dropdown">
+        <a
+         class="nav-link dropdown-toggle"
+         href="#"
+         role="button"
+         data-bs-toggle="dropdown"
+         aria-expanded="false">
+         how to
+        </a>
+        <ul class="dropdown-menu">
+         <li>
+          <a class="dropdown-item" href="#geteduroam">eduroam Apps</a>
+         </li>
+         <li><hr class="dropdown-divider" /></li>
+         <li>
+          <a class="dropdown-item" href="#compatibleDevices"
+           >Compatible devices</a
+          >
+         </li>
+        </ul>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="document.html">documents</a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="contact.html">contact</a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </nav>
+  </header>
+  <br /><br /><br /><br /><br /><br />
+  <div class="container">
+   <hr />
+   <h4 class="for-providers-title">Getting an eduroam account</h4>
+   <p>
+    In order to check if you have the possibility to use eduroam, please contact
+    your home institution.
+   </p>
+   <p>
+    If you are a student or a professor then you can also send an individual
+    request
+    <a
+     class="for-providers-link"
+     href="https://kren-ks.eu/eduroam/how-to/www.kren-ks.com"
+     >using this link.</a
+    >
+   </p>
+
+   <h4 class="for-providers-title" id="compatibleDevices">
+    Compatible devices
+   </h4>
+   <p>
+    eduroam is based on IT industry standards and there are too many devices
+    which support eduroam for them to be exhaustively listed here. As a general
+    rule, you can verify whether your device can do eduroam by looking into your
+    device’s manual. Check for the following points
+   </p>
+   <ul>
+    <li>Does the device support wireless encryption with WPA2/AES?</li>
+    <li>
+     Does the device support “Enterprise” authentication (this is sometimes also
+     called “IEEE 802.1X support”)?
+    </li>
+   </ul>
+   <p>
+    If both are a “Yes”, then your device is good to go in principle. There is
+    one further question which is depending on your institution’s eduroam setup
+    though: Enterprise authentication happens via so-called “EAP Methods”. Your
+    institution has selected one or more of these EAP methods for eduroam; and
+    their list must match your device’s capabilities. Your institution will be
+    able to tell you which EAP methods they support. To give you an idea what to
+    look for, here is a list of popular EAP methods:
+   </p>
+   <ul>
+    <li>EAP TTLS-PAP</li>
+    <li>PEAP</li>
+    <li>EAP TLS</li>
+    <li>EAP-pwd</li>
+   </ul>
+   <p class="for-providers-last-p">
+    Further to these generic instructions, we have an ongoing community effort
+    to document known-working devices on the following page: Compatible Devices.
+   </p>
+
+   <hr />
+
+   <h4 class="for-providers-title" id="geteduroam">eduroam Apps</h4>
+   <p>
+    eduroam provides several apps through the Google and Apple app stores to
+    make the use of eduroam more convenient.
+   </p>
+   <div class="eduroam-companion">
+    <p style="color: #800000">
+     <em><b>eduroam Companion</b></em>
+    </p>
+    <p>
+     The eduroam Companion app provides a global map of eduroam hotspots on your
+     phone as provided by the eduroam operators worldwide. It allows you to view
+     them on the map (default), get directions to the nearest eduroam access
+     point or share the information to other apps.
+    </p>
+    <ul>
+     <li style="list-style-type: circle">
+      <a
+       href="https://apps.apple.com/gb/app/eduroam-companion/id480611749"
+       class="for-providers-link"
+       ><em><b>eduroam Companion on Apple App Store</b></em></a
+      >
+     </li>
+     <li style="list-style-type: circle">
+      <a
+       href="https://play.google.com/store/apps/details?id=net.ja.android.eduroamcompanion"
+       class="for-providers-link"
+       ><em><b>eduroam Companion on Google Play Store</b></em></a
+      >
+     </li>
+    </ul>
+    <p>
+     eduroam Companion is currently not available on Huawei AppGallery, but you
+     can side-load it from reputable app stores. It is deeply integrated with
+     Google Play APIs and will have a degraded user experience on Huawei phones
+     that do not use Google Play.
+    </p>
+
+    <p style="color: #800000">
+     <em><b>geteduroam</b></em>
+    </p>
+    <p>
+     The geteduroam app provides an easy way to set up your device for eduroam
+     using the eduroam CAT profile for your organisation. More information about
+     geteduroam is at its
+     <a
+      href="https://www.geteduroam.app/"
+      class="for-providers-link eduroam-apps-link-hover"
+      >home page</a
+     >
+     and
+     <a
+      href="https://confluence.terena.org/display/H2eduroam/geteduroam+for+NROs+and+IdPs"
+      class="for-providers-link eduroam-apps-link-hover"
+      >here</a
+     >. Also see the Jisc information page about geteduroam
+     <a
+      href="https://community.jisc.ac.uk/library/network-and-technology-service-docs/geteduroam-app"
+      class="for-providers-link eduroam-apps-link-hover"
+      >here</a
+     >.
+    </p>
+    <ul>
+     <li style="list-style-type: circle">
+      <a
+       href="https://apps.apple.com/us/app/geteduroam/id1504076137"
+       class="for-providers-link"
+       ><em><b>geteduroam on Apple App Store</b></em></a
+      >
+     </li>
+     <li style="list-style-type: circle">
+      <a
+       href="https://play.google.com/store/apps/details?id=app.eduroam.geteduroam"
+       class="for-providers-link"
+       ><em><b>geteduroam on Google Play Store</b></em></a
+      >
+     </li>
+     <li style="list-style-type: circle">
+      <a
+       href="https://appgallery.huawei.com/#/app/C104231893"
+       class="for-providers-link"
+       ><em><b>geteduroam on Huawei AppGallery</b></em></a
+      >
+     </li>
+    </ul>
+
+    <p style="color: #800000">
+     <em><b>eduroam CAT app</b></em>
+    </p>
+    <p>
+     The eduroam CAT app is geteduroam’s predecessor. It provides an easy way to
+     set up your Android device with an eduroam CAT profile. It is no longer
+     maintained and is recommended only for Android versions before Android 8.
+    </p>
+    <ul>
+     <li style="list-style-type: circle">
+      <a
+       href="https://play.google.com/store/apps/details?id=uk.ac.swansea.eduroamcat"
+       class="for-providers-link"
+       ><em><b>eduroam CAT App on Google Play Store</b></em></a
+      >
+     </li>
+    </ul>
+   </div>
+   <p class="for-providers-last-p">
+    If you need more details per each apps you can visit
+    <a href="https://confluence.terena.org/display/H2eduroam/eduroam+Apps"
+     >https://confluence.terena.org/display/H2eduroam/eduroam+Apps</a
+    >
+   </p>
+
+   <hr />
+
+   <h4 class="for-providers-title">Configuring your device for eduroam</h4>
+   <p>
+    As a golden rule, you need to configure your device only exactly once, as
+    instructed to by your home institution. From then on, you can use all
+    eduroam hotspots worldwide without reconfiguring anything.
+   </p>
+   <p>
+    We recommend <a href="" id="#geteduroam">using eduraom apps</a>. However,
+    you can configure manualy.Exactly how to configure your laptop or other
+    handheld device for eduroam will depend on
+   </p>
+   <ul>
+    <li>which device(s) you are using and</li>
+    <li>your institution’s local identity management configuration</li>
+   </ul>
+   <p>
+    If you know that your school / university / college does provide eduroam,
+    <b
+     >please ask the IT staff for support with setting it up on your laptop or
+     other devices</b
+    >. If your institution participates in our support tool “eduroam
+    Configuration Assistant Tool” (eduroam CAT) then you can immediately
+    download custom-made installers for your institution for many devices. To
+    find out if that is the case, just hop over to https://cat.eduroam.org and
+    try to find your institution in the list of providers.
+   </p>
+   <p>
+    Important: all configuration instructions are specific for the issuing
+    institution. It is not helpful to follow configuration instructions of other
+    institutions; the settings are different from institution to institution and
+    you will very likely mis-configure your device if trying third-party
+    configurations.
+   </p>
+   <p>
+    If you are not sure whether or not your institution provides eduroam at all,
+    the National Roaming Operator for your country may be able to help with your
+    enquiry.
+   </p>
+   <p class="for-providers-last-p">
+    To find out more, follow the linked maps from<a href="https://eduroam.org/"
+     >http://www.eduroam.org/</a
+    >
+   </p>
+
+   <hr />
+
+   <h4 class="for-providers-title">eduroam network characteristics</h4>
+   <p>
+    eduroam networks are provided by participating institutions locally and is
+    their own responsibility. As a roaming consortium, eduroam defines minimal
+    compliance rules on how hotspot deployments need to act like; you can think
+    of this as a “franchise” system.
+   </p>
+   <p>
+    As a result, not all eduroam hotspots are identical. You can expect the
+    following baseline configuration at eduroam hotspots:
+   </p>
+   <ul>
+    <li>Use is free of charge.</li>
+    <li>The wireless network is encrypted with WPA2/AES.</li>
+    <li>
+     Your username and password is exclusively validated with IEEE 802.1X as
+     described above.
+    </li>
+    <li>The network gives you access to the general internet.</li>
+   </ul>
+   <p>
+    In Europe, a minimum number of services (“ports”) must be made available at
+    the hotspot. The list includes sending and receiving email (encrpytedly and
+    unencryptedly), browsing web pages (encrpytedly and unencryptedly), and
+    access to a wide variety of Virtual Private Networking (VPN) solutions which
+    can connect you back to your home institution in privacy. The full list of
+    ports is available in section 6.3.3 “Specifications and Operational
+    Requirements: Service Providers” (p.31+) of the European eduroam Service
+    Definition.
+   </p>
+   <p>
+    Apart from that, you should consider every eduroam network as a “normal ISP”
+    network. In particular, the WPA2/AES encryption only protects your traffic
+    while it is in the air; as soon as it travels onwards onto the internet,
+    your traffic is not encrypted any more unless you chose to use encrypted
+    transfer protocols (e.g. browse with https:// instead of http:// ; or if you
+    started a VPN connection).
+   </p>
+   <p>
+    If you do not choose to encrypt your traffic on your device, everybody on
+    the internet may be able to see the content of your communication in
+    clear-text; record it or create profiles from it. This is not
+    eduroam-specific; it’s the way the internet works.
+   </p>
+   <p>
+    eduroam Service Providers are discouraged from inspecting traffic of their
+    users; they should rather act as a “mere conduit” provider. It is however
+    possible that some eduroam Service Providers choose to inspect or filter
+    traffic (by using transparent web proxies).
+   </p>
+
+   <h4 class="for-providers-title">eduroam hotspots world-wide</h4>
+   <p>
+    eduroam is a world-wide effort. Currently, eduroam Points of Presence are
+    located on five continents.
+   </p>
+   <p class="for-providers-last-p">
+    eduroam Operations has prepared a world-wide map with all positions on all
+    continents, please check out
+    <a href="https://monitor.eduroam.org/map_service_loc.php"
+     >https://monitor.eduroam.org/map_service_loc.php</a
+    >.
+   </p>
+  </div>
+
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script
+   src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+   integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+   crossorigin="anonymous"></script>
+  <script
+   src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+   integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+   crossorigin="anonymous"></script>
+ </body>
+</html>

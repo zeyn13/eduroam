@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+   rel="stylesheet"
+   href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <link
+   href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+   rel="stylesheet"
+   integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+   crossorigin="anonymous" />
+
+  <title>For providers</title>
+  <link rel="stylesheet" href="style.css" />
+ </head>
+ <body>
+  <header data-bs-theme="dark">
+   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+     <img
+      src="img/kren-logo.jpg"
+      class="rounded-circle m-2 kren-logo"
+      width="10%"
+      alt="" />
+     <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarCollapse"
+      aria-controls="navbarCollapse"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse navbar-desktop" id="navbarCollapse">
+      <ul class="navbar-nav m-auto mb-2 mb-md-0">
+       <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="index.html">eduroam</a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="users.html">users</a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="for-providers.html">for providers</a>
+       </li>
+       <li class="nav-item dropdown">
+        <a
+         class="nav-link dropdown-toggle"
+         href="#"
+         role="button"
+         data-bs-toggle="dropdown"
+         aria-expanded="false">
+         how to
+        </a>
+        <ul class="dropdown-menu">
+         <li>
+          <a class="dropdown-item" href="eduroam-apps.html">eduroam Apps</a>
+         </li>
+         <li><hr class="dropdown-divider" /></li>
+         <li>
+          <a class="dropdown-item" href="compatible-devices.html"
+           >Compatible devices</a
+          >
+         </li>
+        </ul>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="document.html">documents</a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="contact.html">contact</a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </nav>
+  </header>
+  <br /><br /><br /><br /><br /><br />
+  <div class="container">
+   <hr />
+   <h4 class="for-providers-title">
+    Basic deployment considerations for wireless LANs
+   </h4>
+   <p>
+    An eduroam wireless network is a wireless network. This sounds trivial, but
+    it is important to keep in mind that
+   </p>
+   <ul>
+    <li>
+     a poorly managed Wireless LAN won’t magically become better by naming it
+     eduroam. Before diving into eduroam-specific configuration, make sure you
+     understand how to manage
+    </li>
+    <ul>
+     <li>WiFi coverage</li>
+     <li>bandwidth requirements</li>
+     <li>enough DHCP addresses to accomodate all clients</li>
+    </ul>
+    <li>
+     by naming the network eduroam, you are becoming part of a world-wide
+     recognised brand. Arriving users will think of this being an eduroam
+     network, with a set of expectations for such networks. If your wireless
+     network fails to deliver in the points mentioned above, users will consider
+     this an eduroam failure and your installation will hurt the global brand
+     eduroam, not only your own site and users.
+    </li>
+   </ul>
+   <p class="for-providers-last-p">
+    This section provides general advice regarding eduroam deployment on a
+    wireless LAN. It does not include information on general WLAN network
+    planning and setup, it only covers topics essential to deploying eduroam on
+    an already setup wireless LAN.
+   </p>
+  </div>
+
+  <div class="container">
+   <hr />
+   <h4 class="for-providers-title">Proxy Settings</h4>
+   <p>
+    As an eduroam SP, you have a choice of not deploying a network-side proxy at
+    all (pereferred!), or to deploy a transparent web content proxy. It is not
+    acceptable and technically not possible to deploy a proxy that requires
+    manual settings: doing so would require any incoming eduroam visitor to
+    modify their device configutation with the manual proxy settings at hand.
+   </p>
+   <p>
+    Client devices can typically auto-detect proxy settings easily: the
+    automatic WPAD discovery protocol allows the eduroam SP operator to point
+    users to the proxy address if any, or to announce that no proxy is in use.
+    eduroam installers configure client devices to look for such configuration
+    information on the network.
+   </p>
+   <p>
+    As an eduroam SP, you shold always provide proxy configuration information,
+    even if the information is limited to state “no proxy here”. You can do so
+    either (preferably) in DHCP responses or in specially crafted DNS Resource
+    Records in your domain.
+   </p>
+
+   <h4 class="for-providers-title">
+    Set up of networking equipment in the network core
+   </h4>
+   <p>
+    Since an eduroam hotspot always uses the RADIUS protocol to connect to a
+    RADIUS authentication server, your network setup must allow this RADIUS
+    communication. This includes opening firewalls for traffic from the WLAN
+    equipment (AP/Controller) to UDP port 1812 (do not confuse this with TCP!).
+    The RADIUS protocol can easily create UDP fragments, and will not function
+    fully without UDP fragmentation support. Be sure to check your equipment
+    whether forwarding of UDP fragments is supported and allowed. For accounting
+    the UDP port 1813 also needs to be opened.
+   </p>
+   <p>
+    If you deploy your own RADIUS server for eduroam SP purposes (see below),
+    also make sure that its own uplinks to your National Roaming Operator are
+    open in the same way.
+   </p>
+   <p class="for-providers-last-p">
+    Mor info on “how to configure” you can find on this address:
+    <a href="#" class="for-providers-link"
+     >https://confluence.terena.org/display/H2eduroam/eduroam+SP</a
+    >
+   </p>
+
+   <hr class="for-providers-hr" />
+  </div>
+
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script
+   src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+   integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+   crossorigin="anonymous"></script>
+  <script
+   src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+   integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+   crossorigin="anonymous"></script>
+ </body>
+</html>
